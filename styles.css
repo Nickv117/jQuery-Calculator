@@ -1,0 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "Num1 Num2"
+    "answer answer"
+    "ad subb"
+    "mull divv";
+  justify-content: center;
+  border: 1px solid #777;
+  background: rgb(51, 171, 249);
+  width: 248px;
+  margin-left: 42%;
+  padding: 5px;
+  grid-gap: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Num1 {
+  grid-area: Num1;
+  text-align: center;
+  height: 44px;
+}
+
+#Num2 {
+  grid-area: Num2;
+  text-align: center;
+  height: 44px;
+}
+
+#answer {
+  grid-area: answer;
+  text-align: center;
+  height: 65px;
+  font-size: 21px;
+}
+
+#add {
+  grid-area: ad;
+  margin: 0 26px 0;
+  height: 33px;
+}
+
+#subtract {
+  grid-area: subb;
+  margin: 0 26px 0;
+  height: 33px;
+}
+
+#multiply {
+  grid-area: mull;
+  margin: 0 26px 0;
+  height: 33px;
+}
+#divide {
+  grid-area: divv;
+  margin: 0 26px 0;
+  height: 33px;
+}
